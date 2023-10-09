@@ -1,0 +1,17 @@
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.sch-bak
+*.zip
+*-cache.lib
+*.kicad_prl
+.idea
+_autosave*
+*-backups
+*.xml
+*.csv
+fp-info-cache
+fp-lib-table
+sym-lib-table
+GERBER
+/*.svg
+\#auto_saved_files\#
