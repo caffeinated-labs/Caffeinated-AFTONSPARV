@@ -9,6 +9,7 @@ _autosave*
 *-backups
 *.xml
 *.csv
+~*
 fp-info-cache
 fp-lib-table
 sym-lib-table
