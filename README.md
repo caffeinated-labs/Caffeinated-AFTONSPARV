@@ -21,3 +21,4 @@ You can connect it to your smart home using the ESP32 with common firmware.
 |U1                 | ESP32-C3-MINI-1-[H/N]4 | 1   | C2934569 / C2838502 |
 |U2                 | SY8201ABC              | 1   | C108052             |
 
+[BOM Tool](bom/ibom.html)
