@@ -1,7 +1,9 @@
 # Caffeinated AFTONSPARV
 
 This small PCB replaces the original board inside your [AFTONSPARV Planet lamp](https://www.ikea.com/us/en/p/aftonsparv-led-decorative-light-planet-shape-multicolor-20559209/).
-You can connect it to your smart home using the ESP32 with common firmware.
+You can connect it to your smart home using the ESP32 with common firmware. And the best thing, it's all OSHW certified: [DE000140](https://certification.oshwa.org/de000140.html)
+
+[![OSHW-DE000140](/docs/oshw.svg)](https://certification.oshwa.org/de000140.html)
 
 ## BOM
 | Reference         | Value                  | Qty | LCSC                |
