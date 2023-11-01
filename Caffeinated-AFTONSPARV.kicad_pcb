@@ -210,7 +210,7 @@
       (net 44 "USB-D-") (pinfunction "Pin_3") (pintype "passive") (tstamp 41223a6c-f76a-4ea4-81bf-bdbb7fc06933))
     (pad "4" thru_hole oval (at 0 3 90) (size 0.85 0.85) (drill 0.5) (layers "*.Cu" "*.Mask")
       (net 27 "+3.3V") (pinfunction "Pin_4") (pintype "passive") (tstamp fe1292d7-6b08-4222-8592-81261215afb9))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinSocket_1.00mm.3dshapes/PinSocket_1x04_P1.00mm_Vertical.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Connector_PinSocket_1.00mm.3dshapes/PinSocket_1x04_P1.00mm_Vertical.wrl" hide
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -4125,7 +4125,7 @@
       (net 5 "Net-(J2-Pin_3)") (pinfunction "Pin_3") (pintype "passive") (tstamp 244f4e98-6ca6-4d37-ac3d-adb16c080cd2))
     (pad "4" thru_hole oval (at 0 -7.62 270) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
       (net 2 "+24V") (pinfunction "Pin_4") (pintype "passive") (tstamp e1d98288-682f-423b-b846-e2da74b41983))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x04_P2.54mm_Vertical.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x04_P2.54mm_Vertical.wrl" hide
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -4913,7 +4913,7 @@
       (net 1 "GND") (pinfunction "Pin_1") (pintype "passive") (tstamp 664e4f51-bdfe-486e-8681-5456831e210c))
     (pad "2" thru_hole oval (at 0 -2.54 90) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
       (net 2 "+24V") (pinfunction "Pin_2") (pintype "passive") (tstamp 8c0fe267-5c3d-42ff-8aaf-739a9e83bbcd))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x02_P2.54mm_Vertical.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x02_P2.54mm_Vertical.wrl" hide
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
