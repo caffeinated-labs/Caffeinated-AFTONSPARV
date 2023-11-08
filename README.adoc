@@ -10,8 +10,6 @@ image:docs/render.png[KiCad 3D render of the pcb, 500] image:docs/oshw.svg[OSHW-
 image:docs/caffeinated-aftonsparv.jpg[Caffeinated AFTONSPARV, 850]
 
 == Instructions
-=== Step 1: Install firmware
-Connect the ESP to your computer using the TagConnect or USB interface and install the firmware of your choosing. The button on the front is connected to `IO9`, the boot-mode selectorfootnote:boot-mode[https://www.espressif.com/sites/default/files/documentation/esp32-c3-mini-1_datasheet_en.pdf#table.4]. See <<PinOut>> for more details
 
 === Step 1: Remove the cover
 Remove the bottom cover from the AFTONSPARV lamp, there is no need to open the top cover. Open the marked screws, there's one under the sticker.
@@ -38,13 +36,25 @@ Carefully solder the wires to the Caffeinated AFTONSPARV as shown below:
 |Plug, black | POWER -
 |===
 image:docs/pinout.png[LED and Power connections, 500]
+image:docs/step3.jpg[All wires connected to the PCB, 500]
 
 See <<PinOut>> for more details
 
 === Step 4: Test
 Connect the power and test the PCB.
+If nothing gets hot, you can measure 3.3V at the USB Port continue with the firmware installation
 
-=== Step 5: Close it up
+
+image:docs/step4.jpg[The PCB inside the lamp, 500]
+
+=== Step 5: Install firmware
+Connect the ESP to your computer using the TagConnect or USB interface and install the firmware of your choosing. The button on the front is connected to `IO9`, the boot-mode selectorfootnote:boot-mode[https://www.espressif.com/sites/default/files/documentation/esp32-c3-mini-1_datasheet_en.pdf#table.4].
+
+IMPORTANT: The board *must* be powered with 24V to install firmware.
+
+See <<Firmware>> and <<PinOut>> for more details
+
+=== Step 6: Close it up
 Carefully screw-on the cover and enjoy your new and _caffeinated_ lamp.
 
 == PinOut
@@ -52,7 +62,7 @@ Carefully screw-on the cover and enjoy your new and _caffeinated_ lamp.
 === UART
 NOTE: The diagram on the PCB v0.1 shows `IO8` - it is connected to `IO9`!
 
-To upload software you can use the standard workflow using `esptool.py` footnote:[https://docs.espressif.com/projects/esptool/en/latest/esp32/] just like any other ESP32 board. The UART interface is exposed on the TagConnect port:
+To upload software you can use the standard workflow using `esptool.py` footnote:esptool[https://docs.espressif.com/projects/esptool/en/latest/esp32/] just like any other ESP32 board. The UART interface is exposed on the TagConnect port:
 
 image:docs/TagConnect.png[TagConnect location, 500] image:docs/TagConnect.svg[TagConnect pinout, 200]
 
@@ -70,6 +80,27 @@ NOTE: On v0.1 the LEDs and Power connections are not labeled on the silkscreen.
 Connect the AFTONSPARVs LEDs to the left ports as shown and the power input to the right most *big* connections, connecting to the USB Port will destroy the ESP.
 
 image:docs/pinout.png[LED and Power connections, 500]
+
+== Firmware
+=== WLED
+==== Installation
+[%hardbreaks]
+Installing the WLED firmware is easies with their web installer: https://install.wled.me/[install.wled.me]
+When installing with `esptool` footnote:esptool[] follow this guide and use the ESP32-C3 binary: https://kno.wled.ge/basics/install-binary/[kno.wled.ge/basics/install-binary]
+**Important:** Install this https://install.wled.me/bin/release_0_14_0/esp32-c3_bootloader_v2.bin[ESP32-C3 bootloader] *not* the ESP32 bootlader.
+
+==== Configuration
+[%hardbreaks]
+LED Preferences > Hardware setup
+*1*: `PWM RGB`
+*Index*: `0`
+*GPIOs*: `5`, `6`, `7`
+
+*Button 0 GPIO*: `9`, `Pushbutton`
+
+.Show screenshot
+[%collapsible]
+image:docs/wled.png[The above setting in the WLED interface, 400]
 
 == Hardware
 
