@@ -66,6 +66,8 @@ To upload software you can use the standard workflow using `esptool.py` footnote
 
 image:docs/TagConnect.png[TagConnect location, 500] image:docs/TagConnect.svg[TagConnect pinout, 200]
 
+It is recommended to use this https://github.com/Jana-Marie/USB-UART-BRIDGE[programmer from @Jana-Marie]
+
 === USB
 In addition, the USB interface is exposed as well. It is located on the edge next to the 24V input. Please remember that the ESP32 uses 3.3V and *not* the usual 5V.
 
