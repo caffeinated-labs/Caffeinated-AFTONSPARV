@@ -94,7 +94,7 @@ When installing with `esptool` footnote:esptool[] follow this guide and use the 
 LED Preferences > Hardware setup
 *1*: `PWM RGB`
 *Index*: `0`
-*GPIOs*: `5`, `6`, `7`
+*GPIOs*: `4`, `5`, `6`
 
 *Button 0 GPIO*: `9`, `Pushbutton`
 
@@ -122,7 +122,7 @@ IMPORTANT: It is not possible to hand-solder this project, it requires a hot-air
 |R11                | 1Ω                     | 1   | C22936
 |R12                | 100kΩ                  | 1   | C25803
 |R13                | 22.1kΩ                 | 1   | C25961
-|SW1                | SW_Push                | 1   | C2910751
+|SW1                | SW_Push                | 1   | C2910748
 |U1                 | ESP32-C3-MINI-1-[H/N]4 | 1   | C2934569 / C2838502
 |U2                 | SY8201ABC              | 1   | C108052
 |===

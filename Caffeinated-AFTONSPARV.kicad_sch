@@ -1453,7 +1453,7 @@
     (property "Datasheet" "https://datasheet.lcsc.com/lcsc/2111221830_YIYUAN-YTS-C005-2H_C2910751.pdf" (at 134.62 111.125 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "C2910751" (at 139.7 111.125 0)
+    (property "LCSC" "C2910748" (at 139.7 111.125 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid aa845b87-f9d9-432a-b49b-544ed72c4c4d))
